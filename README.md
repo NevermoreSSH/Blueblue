@@ -42,7 +42,7 @@ apt --fix-missing update && apt update && apt upgrade -y && apt install -y bzip2
 <br>
 ✅ SSH WEBSOCKET TLS & NON-TLS 443/80<br>
 ✅ XRAY VMESS WEBSOCKET TLS & NON-TLS 443/80<br>
-✅ XRAY VLESS WEBSOCKET TLS & NON-TLS 443/80 (SUPPORT CUSTOM PATH / WORRYFREE)<br>
+✅ XRAY VLESS WEBSOCKET TLS & NON-TLS 443/80<br>
 ✅ XRAY TROJAN WEBSOCKET TLS & NON-TLS 443/80<br>
 <br>
 
