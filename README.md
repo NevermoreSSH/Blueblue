@@ -38,4 +38,23 @@ apt --fix-missing update && apt update && apt upgrade -y && apt install -y bzip2
   ```
 <b>
 
-<h1><strong>Enjoy your Free Premium Script</h1>
+[ SERVICES ] <br>
+<br>
+✅ SSH WEBSOCKET TLS & NON-TLS 443/80<br>
+✅ XRAY VMESS WEBSOCKET TLS & NON-TLS 443/80<br>
+✅ XRAY VLESS WEBSOCKET TLS & NON-TLS 443/80 (SUPPORT CUSTOM PATH / WORRYFREE)<br>
+✅ XRAY TROJAN WEBSOCKET TLS & NON-TLS 443/80<br>
+<br>
+
+[ OTHER SERVICES ] <br>
+<br>
+✅ NEW UPDATE BBRPLUS 5.15.96 <br>
+✅ BANDWITH MONITOR <br>
+✅ RAM MONITOR <br>
+✅ DNS CHANGER <br>
+✅ NETFLIX REGION CHECKER <br>
+✅ CHECK LOGIN USER <br>
+✅ CHECK CREATED CONFIG <br>
+✅ AUTOMATIC CLEAR LOG <br>
+✅ AUTOMATIC VPS REBOOT <br>
+✅ BACKUP & RESTORE <br></br>
