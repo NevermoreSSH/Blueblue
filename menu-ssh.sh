@@ -133,7 +133,7 @@ clear
 function ceklim(){
 clear
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[0;41;36m         CEK USER MULTI SSH        \E[0m"
+echo -e "\E[0;41;36m         CHECK USER MULTI SSH        \E[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 if [ -e "/root/log-limit.txt" ]; then
 echo "User Who Violate The Maximum Limit";
@@ -412,16 +412,16 @@ menu
 }
 clear
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "       ${BIWhite}${UWhite}SSH ${NC}"
+echo -e "       ${BIWhite}${UWhite}SSH MENU ${NC}"
 echo -e ""
 echo -e "     ${BICyan}[${BIWhite}1${BICyan}] Add Account SSH      "
 echo -e "     ${BICyan}[${BIWhite}2${BICyan}] Delete Account SSH      "
 echo -e "     ${BICyan}[${BIWhite}3${BICyan}] Renew Account SSH      "
-echo -e "     ${BICyan}[${BIWhite}4${BICyan}] Cek User SSH     "
-echo -e "     ${BICyan}[${BIWhite}5${BICyan}] Mullog SSH     "
-echo -e "     ${BICyan}[${BIWhite}6${BICyan}] Auto Del user Exp     "
+echo -e "     ${BICyan}[${BIWhite}4${BICyan}] Check User SSH     "
+echo -e "     ${BICyan}[${BIWhite}5${BICyan}] Multilogin SSH     "
+echo -e "     ${BICyan}[${BIWhite}6${BICyan}] Auto Delete user Expired     "
 echo -e "     ${BICyan}[${BIWhite}7${BICyan}] Auto Kill user SSH    "
-echo -e "     ${BICyan}[${BIWhite}8${BICyan}] Cek Member SSH"
+echo -e "     ${BICyan}[${BIWhite}8${BICyan}] Check Member SSH"
 echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
 echo -e "     ${BIYellow}Press x or [ Ctrl+C ] • To-${BIWhite}Exit${NC}"
 echo ""
