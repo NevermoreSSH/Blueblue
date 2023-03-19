@@ -15,12 +15,7 @@ Mod By NevermoreSSH
 <img src="https://img.shields.io/static/v1?style=for-the-badge&logo=debian&label=Debian%2011&message=bullseye&color=purple"> 
 </p>
 
-</p>
-<p align="center">
-<img src="https://img.shields.io/static/v1?style=for-the-badge&logo=ubuntu&label=Ubuntu%2018.04&message=Lts&color=red"> 
-<img src="https://img.shields.io/static/v1?style=for-the-badge&logo=ubuntu&label=Ubuntu%2020.04&message=Lts&color=red">
-<img src="https://img.shields.io/static/v1?style=for-the-badge&logo=ubuntu&label=Ubuntu%2022.04&message=Lts&color=red">
-</p>
+
 
 <h2 align="center">Network VPN</h2>
 
