@@ -173,6 +173,8 @@ monthly_usage=$(vnstat -m --oneline | awk -F\; '{print $11}' | sed 's/ //')
 ram_used=$(free -m | grep Mem: | awk '{print $3}')
 total_ram=$(free -m | grep Mem: | awk '{print $2}')
 ram_usage=$(echo "scale=2; ($ram_used / $total_ram) * 100" | bc | cut -d. -f1)
+# OS Uptime
+uptime="$(uptime -p | cut -d " " -f 2-10)"
 # Getting CPU Information
 cpu_usage1="$(ps aux | awk 'BEGIN {sum=0} {sum+=$3}; END {print sum}')"
 cpu_usage="$((${cpu_usage1/\.*/} / ${corediilik:-1}))"
@@ -186,13 +188,15 @@ echo -e "${BICyan} │                  ${BIWhite}${UWhite}Server Informations${
 echo -e "${BICyan} │"                                                                      
 echo -e "${BICyan} │  ${BICyan}OS Linux        :  "$(hostnamectl | grep "Operating System" | cut -d ' ' -f5-)  
 echo -e "${BICyan} │  ${BICyan}Kernel          :  ${BICyan}$(uname -r)${NC}"  
-echo -e "${BICyan} │  ${BICyan}CPU Name        : ${BIYellow}$cname${NC}"
-echo -e "${BICyan} │  ${BICyan}CPU Info        :  ${BIYellow}$cores Cores @ $freq MHz (${cpu_usage}) ${NC}"
-echo -e "${BICyan} │  ${BICyan}Total RAM       :  ${BIYellow}${ram_used}MB / ${total_ram}MB (${ram_usage}%) ${NC}" 
-echo -e "${BICyan} │  ${BICyan}Current Domain  :  ${BIYellow}$(cat /etc/xray/domain)${NC}" 
-echo -e "${BICyan} │  ${BICyan}IP-VPS          :  ${BIYellow}$IPVPS${NC}"                  
-echo -e "${BICyan} │  ${BICyan}ISP-VPS         :  ${BIYellow}$ISPVPS${NC}"  
-echo -e "${BICyan} │  ${BICyan}Total Bandwidth :  ${BIYellow}$daily_usage / $monthly_usage (monthly) ${NC}"
+echo -e "${BICyan} │  ${BICyan}CPU Name        : ${BIWhite}$cname${NC}"
+echo -e "${BICyan} │  ${BICyan}CPU Info        :  ${BIWhite}$cores Cores @ $freq MHz (${cpu_usage}) ${NC}"
+echo -e "${BICyan} │  ${BICyan}Total RAM       :  ${BIWhite}${ram_used}MB / ${total_ram}MB (${ram_usage}%) ${NC}" 
+echo -e "${BICyan} │  ${BICyan}System Uptime   :  ${BIWhite}$uptime${NC}"
+echo -e "${BICyan} │  ${BICyan}Current Domain  :  ${BIWhite}$(cat /etc/xray/domain)${NC}" 
+echo -e "${BICyan} │  ${BICyan}IP-VPS          :  ${BIWhite}$IPVPS${NC}"                  
+echo -e "${BICyan} │  ${BICyan}ISP-VPS         :  ${BIWhite}$ISPVPS${NC}"  
+echo -e "${BICyan} │  ${BICyan}Daily Bandwidth :  ${BIWhite}$daily_usage ${NC}"
+echo -e "${BICyan} │  ${BICyan}Total Bandwidth :  ${BIWhite}$monthly_usage ${NC}"
 echo -e "${BICyan} └────────────────────────────────────────────────────────────┘${NC}"
 echo -e "     ${BICyan} SSH ${NC}: $ressh"" ${BICyan} NGINX ${NC}: $resngx"" ${BICyan}  XRAY ${NC}: $resv2r"" ${BICyan} TROJAN ${NC}: $resv2r"
 echo -e "     ${BICyan}          DROPBEAR ${NC}: $resdbr" "${BICyan} SSH-WS ${NC}: $ressshws"
