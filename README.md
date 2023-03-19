@@ -85,13 +85,12 @@ apt --fix-missing update && apt update && apt upgrade -y && apt install -y bzip2
    - IPtables                : [ON]
    - Auto-Reboot             : [ON]
    - IPv6                    : [OFF]
-   - Autoreboot Off          : 7:00 AM GMT + 8
-   - Autobackup Data
+   - Autoreboot Off          : [ON]
+   - Autobackup Data         : [OFF]
    - AutoKill Multi Login User
    - Auto Delete Expired Account
    - Fully automatic script
    - VPS settings
    - Admin Control
-   - Change port
    - Restore Data
    - Full Orders For Various Services
