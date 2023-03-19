@@ -54,6 +54,7 @@ apt --fix-missing update && apt update && apt upgrade -y && apt install -y bzip2
 ✅ XRAY VMESS WEBSOCKET TLS & NON-TLS 443/80<br>
 ✅ XRAY VLESS WEBSOCKET TLS & NON-TLS 443/80<br>
 ✅ XRAY TROJAN WEBSOCKET TLS & NON-TLS 443/80<br>
+✅ XRAY TROJAN GO TLS 443<br>
 <br>
 
 [ OTHER SERVICES ] <br>
