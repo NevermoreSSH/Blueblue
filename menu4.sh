@@ -225,7 +225,6 @@ echo -e "     ${BICyan}[${BIWhite}21${BICyan}] CLEAR LOG ${BICyan}${BIYellow}${B
 echo -e "     ${BICyan}[${BIWhite}22${BICyan}] FIX MISSING AUTO POINTING ${BICyan}${BIYellow}${BICyan}${NC}"
 echo -e "     ${BICyan}[${BIWhite}23${BICyan}] DNS CHANGER ${BICyan}${BIYellow}${BICyan}${NC}"
 echo -e "     ${BICyan}[${BIWhite}24${BICyan}] NETFLIX CHECKER ${BICyan}${BIYellow}${BICyan}${NC}"
-echo -e "     ${BICyan}[${BIWhite}25${BICyan}] SPEEDTEST ${BICyan}${BIYellow}${BICyan}${NC}"
 echo -e " "
 echo -e "     ${BICyan}[${BIWhite}55${BICyan}] XRAY VERSION ${BICyan}${BIYellow}${BICyan}${NC}"
 echo -e "     ${BICyan}[${BIWhite}66${BICyan}] INSTALL BBRPLUS ${BICyan}${BIYellow}${BICyan}${NC}"
