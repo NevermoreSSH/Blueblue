@@ -12,7 +12,7 @@ NC='\e[0m'
 NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/xray/config.json")
 	if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
         echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-        echo -e "\\E[0;41;36m   Delete XRAY Vless WS Account    \E[0m"
+        echo -e "\\E[0;41;36m   Delete XRAYS WS Account    \E[0m"
         echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 		echo ""
 		echo "You have no existing clients!"
@@ -20,7 +20,7 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/xray/config.json")
 		exit 1
 	fi
     echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-    echo -e "\\E[0;41;36m   Delete XRAY Vless WS Account    \E[0m"
+    echo -e "\\E[0;41;36m   Delete XRAYS WS Account    \E[0m"
     echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 	
 	echo " Select the existing client you want to remove"
@@ -40,7 +40,7 @@ exp=$(grep -E "^### " "/etc/xray/config.json" | cut -d ' ' -f 3 | sed -n "${CLIE
 sed -i "/^### $user $exp/,/^},{/d" /etc/xray/config.json
 systemctl restart xray
 clear
-echo " XRAY Vless WS Account Deleted"
+echo " XRAYS WS Account Deleted"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo " Client Name : $user"
 echo " Expired On  : $exp"
@@ -48,3 +48,6 @@ echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━�
 echo -e ""
 echo -e "Autoscript By NevermoreSSH"
 echo -e ""
+
+menu
+fi
