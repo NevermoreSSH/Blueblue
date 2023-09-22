@@ -175,6 +175,8 @@ total_ram=$(free -m | grep Mem: | awk '{print $2}')
 ram_usage=$(echo "scale=2; ($ram_used / $total_ram) * 100" | bc | cut -d. -f1)
 # OS Uptime
 uptime="$(uptime -p | cut -d " " -f 2-10)"
+# TOTAL ACC CREATE XRAYS WS
+xrays=$(grep -c -E "^### " "/etc/xray/config.json")
 # Getting CPU Information
 cpu_usage1="$(ps aux | awk 'BEGIN {sum=0} {sum+=$3}; END {print sum}')"
 cpu_usage="$((${cpu_usage1/\.*/} / ${corediilik:-1}))"
@@ -225,7 +227,7 @@ echo -e "     ${BICyan}[${BIWhite}21${BICyan}] CLEAR LOG ${BICyan}${BIYellow}${B
 echo -e "     ${BICyan}[${BIWhite}22${BICyan}] FIX MISSING AUTO POINTING ${BICyan}${BIYellow}${BICyan}${NC}"
 echo -e "     ${BICyan}[${BIWhite}23${BICyan}] DNS CHANGER ${BICyan}${BIYellow}${BICyan}${NC}"
 echo -e "     ${BICyan}[${BIWhite}24${BICyan}] NETFLIX CHECKER ${BICyan}${BIYellow}${BICyan}${NC}"
-echo -e "     ${BICyan}[${BIWhite}25${BICyan}] DELETE XRAYS USER ${BICyan}${BIYellow}${BICyan}${NC}"
+echo -e "     ${BICyan}[${BIWhite}25${BICyan}] DELETE XRAYS USER [${BIWhite} $xrays users ${BICyan}] ${BICyan}${BIYellow}${BICyan}${NC}"
 echo -e "     ${BICyan}[${BIWhite}30${BICyan}] VLESS CONFIG ${BICyan}${BIYellow}${BICyan}${NC}"
 echo -e " "
 echo -e "     ${BICyan}[${BIWhite}55${BICyan}] XRAY VERSION ${BICyan}${BIYellow}${BICyan}${NC}"
