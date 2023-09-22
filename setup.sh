@@ -208,6 +208,8 @@ wget -q -O /usr/bin/update "https://raw.githubusercontent.com/NevermoreSSH/Blueb
 wget -q -O /usr/bin/dns "https://raw.githubusercontent.com/NevermoreSSH/Blueblue/main/dns.sh"
 wget -q -O /usr/bin/netf "https://raw.githubusercontent.com/NevermoreSSH/Blueblue/main/netf.sh"
 wget -q -O /usr/bin/bbr "https://raw.githubusercontent.com/NevermoreSSH/Blueblue/main/bbr.sh"
+wget -q -O /usr/bin/del-xrays "https://raw.githubusercontent.com/NevermoreSSH/Blueblue/main/del-xrays.sh"
+wget -q -O /usr/bin/user-xrays "https://raw.githubusercontent.com/NevermoreSSH/Blueblue/main/user-xrays.sh"
 chmod +x /usr/bin/add-ws
 chmod +x /usr/bin/add-ssws
 chmod +x /usr/bin/add-socks
@@ -241,6 +243,8 @@ chmod +x /usr/bin/update
 chmod +x /usr/bin/dns
 chmod +x /usr/bin/netf
 chmod +x /usr/bin/bbr
+chmod +x /usr/bin/del-xrays
+chmod +x /usr/bin/user-xrays
 
 
 # > install gotop
