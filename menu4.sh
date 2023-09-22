@@ -225,6 +225,8 @@ echo -e "     ${BICyan}[${BIWhite}21${BICyan}] CLEAR LOG ${BICyan}${BIYellow}${B
 echo -e "     ${BICyan}[${BIWhite}22${BICyan}] FIX MISSING AUTO POINTING ${BICyan}${BIYellow}${BICyan}${NC}"
 echo -e "     ${BICyan}[${BIWhite}23${BICyan}] DNS CHANGER ${BICyan}${BIYellow}${BICyan}${NC}"
 echo -e "     ${BICyan}[${BIWhite}24${BICyan}] NETFLIX CHECKER ${BICyan}${BIYellow}${BICyan}${NC}"
+echo -e "     ${BICyan}[${BIWhite}25${BICyan}] DELETE XRAYS USER ${BICyan}${BIYellow}${BICyan}${NC}"
+echo -e "     ${BICyan}[${BIWhite}30${BICyan}] VLESS CONFIG ${BICyan}${BIYellow}${BICyan}${NC}"
 echo -e " "
 echo -e "     ${BICyan}[${BIWhite}55${BICyan}] XRAY VERSION ${BICyan}${BIYellow}${BICyan}${NC}"
 echo -e "     ${BICyan}[${BIWhite}66${BICyan}] INSTALL BBRPLUS ${BICyan}${BIYellow}${BICyan}${NC}"
@@ -269,6 +271,8 @@ case $opt in
 #22) clear ; wget https://raw.githubusercontent.com/NevermoreSSH/Blueblue/main/cf.sh && chmod +x cf.sh && ./cf.sh ;;
 23) clear ; dns ;;
 24) clear ; netf ;;
+25) clear ; del-xrays ;;
+30) clear ; user-xrays ;;
 
 0) clear ; menu ;;
 x) exit ;;
