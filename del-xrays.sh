@@ -50,4 +50,3 @@ echo -e "Autoscript By NevermoreSSH"
 echo -e ""
 
 menu
-fi
