@@ -48,5 +48,3 @@ echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━�
 echo -e ""
 echo -e "Autoscript By NevermoreSSH"
 echo -e ""
-
-menu
