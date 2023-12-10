@@ -63,11 +63,11 @@ export IP=$( curl -s https://ipinfo.io/ip/ )
 export NETWORK_IFACE="$(ip route show to default | awk '{print $5}')"
 
 ##----- Auto Remove Vmess
-data=( `cat /etc/xray/config.json | grep '^#vms' | cut -d ' ' -f 2 | sort | uniq`);
+data=( `cat /etc/xray/config.json | grep '^#vmsg' | cut -d ' ' -f 2 | sort | uniq`);
 now=`date +"%Y-%m-%d"`
 for user in "${data[@]}"
 do
-exp=$(grep -w "^#vms $user" "/etc/xray/config.json" | cut -d ' ' -f 3 | sort | uniq)
+exp=$(grep -w "^#vmsg $user" "/etc/xray/config.json" | cut -d ' ' -f 3 | sort | uniq)
 d1=$(date -d "$exp" +%s)
 d2=$(date -d "$now" +%s)
 exp2=$(( (d1 - d2) / 86400 ))
@@ -79,11 +79,11 @@ fi
 done
 
 #----- Auto Remove Vless
-data=( `cat /etc/xray/config.json | grep '^#vls' | cut -d ' ' -f 2 | sort | uniq`);
+data=( `cat /etc/xray/config.json | grep '^#vlsg' | cut -d ' ' -f 2 | sort | uniq`);
 now=`date +"%Y-%m-%d"`
 for user in "${data[@]}"
 do
-exp=$(grep -w "^#vls $user" "/etc/xray/config.json" | cut -d ' ' -f 3 | sort | uniq)
+exp=$(grep -w "^#vlsg $user" "/etc/xray/config.json" | cut -d ' ' -f 3 | sort | uniq)
 d1=$(date -d "$exp" +%s)
 d2=$(date -d "$now" +%s)
 exp2=$(( (d1 - d2) / 86400 ))
@@ -94,11 +94,11 @@ fi
 done
 
 #----- Auto Remove Trojan
-data=( `cat /etc/xray/config.json | grep '^#tr' | cut -d ' ' -f 2 | sort | uniq`);
+data=( `cat /etc/xray/config.json | grep '^#trg' | cut -d ' ' -f 2 | sort | uniq`);
 now=`date +"%Y-%m-%d"`
 for user in "${data[@]}"
 do
-exp=$(grep -w "^#tr $user" "/etc/xray/config.json" | cut -d ' ' -f 3 | sort | uniq)
+exp=$(grep -w "^#trg $user" "/etc/xray/config.json" | cut -d ' ' -f 3 | sort | uniq)
 d1=$(date -d "$exp" +%s)
 d2=$(date -d "$now" +%s)
 exp2=$(( (d1 - d2) / 86400 ))
