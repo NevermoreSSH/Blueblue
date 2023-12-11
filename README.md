@@ -72,6 +72,8 @@ apt --fix-missing update && apt update && apt upgrade -y && apt install -y bzip2
 ✅ AUTOMATIC CLEAR LOG <br>
 ✅ AUTOMATIC VPS REBOOT <br>
 ✅ BACKUP & RESTORE <br></br>
+✅ XRAYCORE CHANGER <br></br>
+✅ VIRTUAL SWAPRAM <br></br>
 
 
 ```
