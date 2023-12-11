@@ -116,6 +116,8 @@ echo -e "NS Host : $nameserver" | tee -a /etc/log-create-user.log
 echo -e "Pubkey : $pubkey" | tee -a /etc/log-create-user.log
 echo -e "OpenSSH : $opensh" | tee -a /etc/log-create-user.log
 echo -e "Dropbear : $db" | tee -a /etc/log-create-user.log
+echo -e "SlowDNS : 22,53,5300,80,443" | tee -a /etc/log-create-user.log
+echo -e "UDP Custom : 1-65535" | tee -a /etc/log-create-user.log
 echo -e "SSH-WS : $portsshws" | tee -a /etc/log-create-user.log
 echo -e "SSH-SSL-WS : $wsssl" | tee -a /etc/log-create-user.log
 echo -e "SSL/TLS : $ssl" | tee -a /etc/log-create-user.log
@@ -156,6 +158,8 @@ echo -e "NS Host : $nameserver" | tee -a /etc/log-create-user.log
 echo -e "Pubkey : $pubkey" | tee -a /etc/log-create-user.log
 echo -e "OpenSSH : $opensh" | tee -a /etc/log-create-user.log
 echo -e "Dropbear : $db" | tee -a /etc/log-create-user.log
+echo -e "SlowDNS : 22,53,5300,80,443" | tee -a /etc/log-create-user.log
+echo -e "UDP Custom : 1-65535" | tee -a /etc/log-create-user.log
 echo -e "SSH-WS : $portsshws" | tee -a /etc/log-create-user.log
 echo -e "SSH-SSL-WS : $wsssl" | tee -a /etc/log-create-user.log
 echo -e "SSL/TLS : $ssl" | tee -a /etc/log-create-user.log
