@@ -196,7 +196,7 @@ systemctl restart xray.service
 clear
 echo ""
 echo "==============================="
-echo "  XRAYS/Vmess Account Deleted  "
+echo "  XRAYS/Trojan Account Deleted  "
 echo "==============================="
 echo "Username  : $user"
 echo "Expired   : $exp"
