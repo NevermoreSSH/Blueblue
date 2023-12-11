@@ -382,7 +382,7 @@ echo ""
 echo ""
 echo "------------------------------------------------------------"
 echo ""
-echo "===============-[ Script Mod By ZEAKING TUNNELING ]-==============="
+echo "===============-[ Script Mod By NEVERMORESSH TUNNELING ]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
