@@ -138,3 +138,6 @@ else
 userdel --force $username
 fi
 done
+echo -e "[ ${green}INFO${NC} ] Back to menu in 5 sec . . . "
+sleep 5
+menu
