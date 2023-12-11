@@ -112,7 +112,7 @@ cat > /home/vps/public_html/trojan-$user.txt <<-END
 ====================================================================
 
 _______________________________________________________
-              Link Vless Account
+              Link Trojan Account
 _______________________________________________________
 Link WS : trojan://${uuid}@${domain}:${tr}?path=%2Ftrojan-ws&security=tls&host=bug.com&type=ws&sni=bug.com#${user}
 _______________________________________________________
