@@ -65,8 +65,6 @@ apt --fix-missing update && apt update && apt upgrade -y && apt install -y bzip2
 [ SERVICES ] <br>
 <br>
 ✅ SSH WEBSOCKET TLS & NON-TLS 443/80<br>
-✅ SSH SLOWDNS 53/5300<br>
-✅ SSH UDP CUSTOM 1-65535<br>
 ✅ XRAY VMESS WEBSOCKET TLS & NON-TLS 443/80<br>
 ✅ XRAY VLESS WEBSOCKET TLS & NON-TLS 443/80<br>
 ✅ XRAY TROJAN WEBSOCKET TLS & NON-TLS 443/80<br>
@@ -93,8 +91,6 @@ apt --fix-missing update && apt update && apt upgrade -y && apt install -y bzip2
    - OpenSSH                 : 22
    - SSH Websocket           : 80
    - SSH SSL Websocket       : 443
-   - SlowDNS                 : 22,53,5300,80,443
-   - UDP Custom              : 1-65535
    - Stunnel5                : 447, 777
    - Dropbear                : 109, 143
    - Badvpn                  : 7100-7300
