@@ -41,11 +41,24 @@ PLEASE MAKE SURE YOUR DOMAIN SETTINGS IN YOUR CLOUDFLARE AS BELOW (SSL/TLS SETTI
 3. Edge Certificates > Disable Always Use HTTPS (off)
 
 <br>
-
+♦️ For Debian 10 / 11 For First Time Installation (Update Repo) <br>
+ 
+  ```html
+ apt update -y && apt upgrade -y && apt dist-upgrade -y && reboot
+  ```
+  ♦️ For Ubuntu 18.04 For First Time Installation (Update Repo) <br>
+  
+  ```html
+ apt-get update && apt-get upgrade -y && apt dist-upgrade -y && update-grub && reboot
+ ```
 ♦️ Installation Link (Recommend Ubuntu) <br>
 
   ```html
 apt --fix-missing update && apt update && apt upgrade -y && apt install -y bzip2 gzip coreutils screen dpkg wget vim curl nano zip unzip && wget -q https://raw.githubusercontent.com/NevermoreSSH/Blueblue/main/setup.sh && chmod +x setup.sh && screen -S setup ./setup.sh
+  ```
+IPV6 enable
+```html
+apt --fix-missing update && apt update && apt upgrade -y && apt install -y bzip2 gzip coreutils screen dpkg wget vim curl nano zip unzip && wget -q https://raw.githubusercontent.com/NevermoreSSH/Blueblue/main/setup2.sh && chmod +x setup2.sh && screen -S setup ./setup2.sh
   ```
 <b>
 
