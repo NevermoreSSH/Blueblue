@@ -57,7 +57,6 @@ apt --fix-missing update && apt update && apt upgrade -y && apt install -y bzip2
 ✅ XRAY VMESS WEBSOCKET TLS & NON-TLS 443/80<br>
 ✅ XRAY VLESS WEBSOCKET TLS & NON-TLS 443/80<br>
 ✅ XRAY TROJAN WEBSOCKET TLS & NON-TLS 443/80<br>
-✅ XRAY TROJAN GO TLS 443<br>
 <br>
 
 [ OTHER SERVICES ] <br>
@@ -95,7 +94,6 @@ apt --fix-missing update && apt update && apt upgrade -y && apt install -y bzip2
    - XRAY Vless None TLS     : 80
    - XRAY Trojan GRPC        : 443
    - XRAY Trojan WS          : 443
-   - XRAY Trojan GO          : 443
    - Sodosok WS/GRPC         : 443
 
    [ Server Information & Other Features ]
