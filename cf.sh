@@ -1,6 +1,9 @@
 # // String / Request Data
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
+MYIP=$(curl -s ipinfo.io/ip )
+MYIP=$(curl -sS ipv4.icanhazip.com)
+MYIP=$(curl -sS ifconfig.me )
 #MYIP=$(wget -qO- https://ipv4.icanhazip.com);
 #MYIP=$(wget -qO- https://ipv6.icanhazip.com);
 clear
