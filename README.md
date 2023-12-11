@@ -52,6 +52,8 @@ apt --fix-missing update && apt update && apt upgrade -y && apt install -y bzip2
 [ SERVICES ] <br>
 <br>
 ✅ SSH WEBSOCKET TLS & NON-TLS 443/80<br>
+✅ SSH SLOWDNS 53/5300<br>
+✅ SSH UDP CUSTOM 1-65535<br>
 ✅ XRAY VMESS WEBSOCKET TLS & NON-TLS 443/80<br>
 ✅ XRAY VLESS WEBSOCKET TLS & NON-TLS 443/80<br>
 ✅ XRAY TROJAN WEBSOCKET TLS & NON-TLS 443/80<br>
@@ -72,7 +74,7 @@ apt --fix-missing update && apt update && apt upgrade -y && apt install -y bzip2
 ✅ BACKUP & RESTORE <br></br>
 
 
-
+```
    [ Service & Port ]
    - OpenSSH                 : 22
    - SSH Websocket           : 80
@@ -106,3 +108,4 @@ apt --fix-missing update && apt update && apt upgrade -y && apt install -y bzip2
    - Admin Control
    - Restore Data
    - Full Orders For Various Services
+```
