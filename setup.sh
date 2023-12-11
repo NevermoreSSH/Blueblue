@@ -259,6 +259,9 @@ chmod +x /usr/bin/bbr
 echo "0 5 * * * root clear-log && reboot" >> /etc/crontab
 echo "0 0 * * * root xp" >> /etc/crontab
 echo "0 0 * * * root delete" >> /etc/crontab
+echo "0 2 * * * root /usr/bin/cleaner" >> /etc/crontab
+echo "0 6 * * * root backup" >> /etc/crontab
+echo "0 23 * * * root backup" >> /etc/crontab
 cd
 
 #cat > /etc/cron.d/re_otm <<-END
