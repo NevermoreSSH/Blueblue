@@ -22,6 +22,9 @@ Mod By NevermoreSSH
 <h2 align="center">
 
 ![Hits](https://img.shields.io/badge/SSH-Websocket-8020f3?style=for-the-badge&logo=Cloudflare&logoColor=white&edge_flat=false)
+![Hits](https://img.shields.io/badge/SSH-SLOWDNS-8020f3?style=for-the-badge&logo=Cloudflare&logoColor=white&edge_flat=false)
+![Hits](https://img.shields.io/badge/SSH-UDPCUSTOM-8020f3?style=for-the-badge&logo=Cloudflare&logoColor=white&edge_flat=false)
+
 ![Hits](https://img.shields.io/badge/XRAY-Vmess-f34b20?style=for-the-badge&logo=Cloudflare&logoColor=white&edge_flat=false)
 ![Hits](https://img.shields.io/badge/XRAY-VLess-f34b20?style=for-the-badge&logo=Cloudflare&logoColor=white&edge_flat=false)
 ![Hits](https://img.shields.io/badge/XRAY-Trojan-f34b20?style=for-the-badge&logo=Cloudflare&logoColor=white&edge_flat=false)
