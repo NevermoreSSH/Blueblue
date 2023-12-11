@@ -181,6 +181,8 @@ menu
 export sem=$( curl -s https://raw.githubusercontent.com/NevermoreSSH/Blueblue/main/test/versions)
 export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
+IPVPS=$(curl -sS ipv4.icanhazip.com)
+IPVPS=$(curl -sS ifconfig.me )
 ISPVPS=$( curl -s ipinfo.io/org )
 daily_usage=$(vnstat -d --oneline | awk -F\; '{print $6}' | sed 's/ //')
 monthly_usage=$(vnstat -m --oneline | awk -F\; '{print $11}' | sed 's/ //')
