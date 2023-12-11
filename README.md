@@ -41,7 +41,7 @@ PLEASE MAKE SURE YOUR DOMAIN SETTINGS IN YOUR CLOUDFLARE AS BELOW (SSL/TLS SETTI
 3. Edge Certificates > Disable Always Use HTTPS (off)
 
 <br>
-♦️ For Debian 10 / 11 For First Time Installation (Update Repo) <br>
+♦️ For Debian 9 / 10 / 11 For First Time Installation (Update Repo) <br>
  
   ```html
  apt update -y && apt upgrade -y && apt dist-upgrade -y && reboot
