@@ -225,6 +225,27 @@ vmesslink4="vmess://$(echo $aso | base64 -w 0)"
 vmesslink5="vmess://$(echo $grpc | base64 -w 0)"
 vmesslink6="vmess://$(echo $ama | base64 -w 0)"
 vmesslink7="vmess://$(echo $ami | base64 -w 0)"
+cat > /home/vps/public_html/vmess-$user.txt <<-END
+====================================================================
+             P R O J E C T  O F  N E V E R M O R E S S H
+                       [Freedom Internet]
+====================================================================
+        https://github.com/NevermoreSSH/Blueblue
+====================================================================
+              Format Vmess WS/GRPC
+====================================================================
+
+_______________________________________________________
+              Link Vmess Account
+_______________________________________________________
+Link TLS : vmess://$(echo $asu | base64 -w 0)
+_______________________________________________________
+Link none TLS : vmess://$(echo $ask | base64 -w 0)
+_______________________________________________________
+Link GRPC : vmess://$(echo $grpc | base64 -w 0)
+_______________________________________________________
+
+END
 systemctl restart xray > /dev/null 2>&1
 service cron restart > /dev/null 2>&1
 clear
@@ -258,6 +279,8 @@ echo -e "Link none TLS : ${vmesslink2}" | tee -a /etc/log-create-user.log
 #echo -e "Link none TLS (Kouta-Habis) : ${vmesslink4}" | tee -a /etc/log-create-user.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Link GRPC : ${vmesslink5}" | tee -a /etc/log-create-user.log
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "Link Vmess Config : http://${domain}:81/vmess-$user.txt" | tee -a /etc/log-create-user.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Expired On : $exp" | tee -a /etc/log-create-user.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
