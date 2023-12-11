@@ -87,13 +87,15 @@ apt --fix-missing update && apt update && apt upgrade -y && apt install -y bzip2
    - Dropbear                : 109, 143
    - Badvpn                  : 7100-7300
    - Nginx                   : 81
-   - XRAY  Vmess TLS         : 443
-   - XRAY  Vmess None TLS    : 80
-   - XRAY  Vless TLS         : 443
-   - XRAY  Vless None TLS    : 80
-   - Trojan GRPC             : 443
-   - Trojan WS               : 443
-   - Trojan GO               : 443
+   - XRAY Vmess GRPC         : 443
+   - XRAY Vmess TLS          : 443
+   - XRAY Vmess None TLS     : 80
+   - XRAY Vless GRPC         : 443
+   - XRAY Vless TLS          : 443
+   - XRAY Vless None TLS     : 80
+   - XRAY Trojan GRPC        : 443
+   - XRAY Trojan WS          : 443
+   - XRAY Trojan GO          : 443
    - Sodosok WS/GRPC         : 443
 
    [ Server Information & Other Features ]
