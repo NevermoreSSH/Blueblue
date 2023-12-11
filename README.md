@@ -93,6 +93,7 @@ apt --fix-missing update && apt update && apt upgrade -y && apt install -y bzip2
    - XRAY Vless TLS          : 443
    - XRAY Vless None TLS     : 80
    - XRAY Trojan GRPC        : 443
+   - XRAY Trojan GO          : 443
    - XRAY Trojan WS          : 443
    - Sodosok WS/GRPC         : 443
 
