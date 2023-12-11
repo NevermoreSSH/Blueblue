@@ -99,8 +99,8 @@ apt --fix-missing update && apt update && apt upgrade -y && apt install -y bzip2
    - Fail2Ban                : [ON]
    - Dflate                  : [ON]
    - IPtables                : [ON]
-   - Auto-Reboot             : [ON]
-   - IPv6                    : [OFF]
+   - Auto-Reboot             : [ON] - 5.00 AM
+   - IPv6                    : [OFF/ON]
    - Autoreboot Off          : [ON]
    - Autobackup Data         : [OFF]
    - AutoKill Multi Login User
