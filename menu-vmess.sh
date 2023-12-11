@@ -70,7 +70,7 @@ clear
 function cekws() {
 clear
 echo -n > /tmp/other.txt
-data=( `cat /etc/xray/config.json | grep '#vmsg' | cut -d ' ' -f 2 | sort | uniq`);
+data=( `cat /etc/xray/config.json | grep '#vms' | cut -d ' ' -f 2 | sort | uniq`);
 echo "-------------------------------";
 echo "-----=[ XRAY User Login ]=-----";
 echo "-------------------------------";
