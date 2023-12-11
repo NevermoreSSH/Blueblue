@@ -398,9 +398,5 @@ rm -fr /root/setup2.sh
 rm -fr /root/domain
 history -c
 
-echo -ne "[ ${yell}WARNING${NC} ] Do You Need Reboot Now ? (y/n)? "
-read answer
-if [ "$answer" == "${answer#[Yy]}" ] ;then
-exit 0
-else
+read -p "$( echo -e "Press ${orange}[ ${NC}${green}Enter${NC} ${CYAN}]${NC} For Reboot") "
 reboot
