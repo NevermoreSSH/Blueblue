@@ -93,9 +93,12 @@ systemctl restart trojan-go.service
 link="trojan-go://${uuid}@isi_bug_disini:${trgo}/?sni=${domain}&type=ws&host=${domain}&path=%2Ftrojango#$user"
 link1="trojan://${uuid}@isi_bug_disini:${trgo}/?sni=${domain}&type=ws&host=${domain}&path=%2Ftrojango#$user"
 clear
-echo -e "\033[0;34mБ■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\E[0;41;36m          TROJAN GO          \E[0m" | tee -a /etc/log-create-user.log
-echo -e "\033[0;34mБ■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│\033[0m" | tee -a /etc/log-create-user.log
+#echo -e "\033[0;34mБ■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│\033[0m" | tee -a /etc/log-create-user.log
+#echo -e "\E[0;41;36m          TROJAN GO          \E[0m" | tee -a /etc/log-create-user.log
+#echo -e "\033[0;34mБ■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[44;1;39m      Add TROJAN GO Account      \E[0m"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Remarks    : ${user}" | tee -a /etc/log-create-user.log
 echo -e "IP/Host    : ${MYIP}" | tee -a /etc/log-create-user.log
 echo -e "Address    : ${domain}" | tee -a /etc/log-create-user.log
@@ -106,11 +109,11 @@ echo -e "Encryption : none" | tee -a /etc/log-create-user.log
 echo -e "Path       : /trojango" | tee -a /etc/log-create-user.log
 echo -e "Created    : $hariini" | tee -a /etc/log-create-user.log
 echo -e "Expired    : $exp" | tee -a /etc/log-create-user.log
-echo -e "\033[0;34mБ■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Link TrGo  		: ${link}" | tee -a /etc/log-create-user.log
-echo -e "\033[0;34mБ■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Link TrGo (v2rayNG)	: ${link1}" | tee -a /etc/log-create-user.log
-echo -e "\033[0;34mБ■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│Б■│\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Script Mod By NevermoreSSH"
 echo "" | tee -a /etc/log-create-user.log
 read -n 1 -s -r -p "Press any key to back on menu"
