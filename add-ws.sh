@@ -110,7 +110,7 @@ asu=`cat<<EOF
       {
       "v": "2",
       "ps": "VMESS_TLS_${user}",
-      "add": "bug.com",
+      "add": "${domain}",
       "port": "443",
       "id": "${uuid}",
       "aid": "0",
@@ -125,7 +125,7 @@ ask=`cat<<EOF
       {
       "v": "2",
       "ps": "VMESS_NTLS_${user}",
-      "add": "bug.com",
+      "add": "${domain}",
       "port": "80",
       "id": "${uuid}",
       "aid": "0",
@@ -147,7 +147,7 @@ asi=`cat<<EOF
       "net": "ws",
       "path": "/worryfree",
       "type": "none",
-      "host": "bug.com",
+      "host": "${domain}",
       "tls": "none"
 }
 EOF`
@@ -177,7 +177,7 @@ grpc=`cat<<EOF
       "net": "grpc",
       "path": "vmess-grpc",
       "type": "none",
-      "host": "bug.com",
+      "host": "${domain}",
       "tls": "tls"
 }
 EOF`
