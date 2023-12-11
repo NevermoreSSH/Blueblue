@@ -75,6 +75,9 @@ export NETWORK_IFACE="$(ip route show to default | awk '{print $5}')"
 
 export DEBIAN_FRONTEND=noninteractive
 MYIP=$(curl -sS ifconfig.me);
+IP=$(curl -s ipinfo.io/ip )
+IP=$(curl -sS ipv4.icanhazip.com)
+IP=$(curl -sS ifconfig.me )
 MYIP2="s/xxxxxxxxx/$MYIP/g";
 NET=$(ip -o $ANU -4 route show to default | awk '{print $5}');
 source /etc/os-release
