@@ -109,7 +109,7 @@ sed -i '/#vmessgrpc$/a\#vmsg '"$user $exp"'\
 asu=`cat<<EOF
       {
       "v": "2",
-      "ps": "${user}",
+      "ps": "VMESS_TLS_${user}",
       "add": "bug.com",
       "port": "443",
       "id": "${uuid}",
@@ -124,7 +124,7 @@ EOF`
 ask=`cat<<EOF
       {
       "v": "2",
-      "ps": "${user}",
+      "ps": "VMESS_NTLS_${user}",
       "add": "bug.com",
       "port": "80",
       "id": "${uuid}",
@@ -169,7 +169,7 @@ EOF`
 grpc=`cat<<EOF
       {
       "v": "2",
-      "ps": "${user}",
+      "ps": "VMESS_GRPC_${user}",
       "add": "${domain}",
       "port": "443",
       "id": "${uuid}",
