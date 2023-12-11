@@ -44,6 +44,9 @@ fi
 
 # // Exporting IP Address
 export IP=$( curl -s https://ipinfo.io/ip/ )
+IP=$(curl -s ipinfo.io/ip )
+IP=$(curl -sS ipv4.icanhazip.com)
+IP=$(curl -sS ifconfig.me )
 
 # // Exporting Network Interface
 export NETWORK_IFACE="$(ip route show to default | awk '{print $5}')"
