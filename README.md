@@ -48,7 +48,7 @@ PLEASE MAKE SURE YOUR DOMAIN SETTINGS IN YOUR CLOUDFLARE AS BELOW (SSL/TLS SETTI
   ```html
  apt-get update && apt-get upgrade -y && apt dist-upgrade -y && update-grub && reboot
  ```
-♦️ Installation Link (Recommend Ubuntu) <br>
+♦️ Installation Link <br>
 
   ```html
 apt --fix-missing update && apt update && apt upgrade -y && apt install -y bzip2 gzip coreutils screen dpkg wget vim curl nano zip unzip && wget -q https://raw.githubusercontent.com/NevermoreSSH/Blueblue/main/setup.sh && chmod +x setup.sh && screen -S setup ./setup.sh
