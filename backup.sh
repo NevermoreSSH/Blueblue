@@ -17,7 +17,7 @@ IP=$(curl -s ipinfo.io/ip )
 IP=$(curl -sS ipv4.icanhazip.com)
 IP=$(curl -sS ifconfig.me )
 date=$(date +"%Y-%m-%d-%H:%M:%S")
-domain=$(cat /usr/local/etc/xray/domain)
+domain=$(cat /etc/xray/domain)
 clear
 echo " VPS Data Backup By NevermoreSSH "
 sleep 1
