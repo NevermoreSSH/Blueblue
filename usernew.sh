@@ -115,24 +115,24 @@ cat > /home/vps/public_html/ssh-$user.txt <<-END
               Format SSH OVPN Account
 ====================================================================
 
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" 
-echo -e "\E[0;41;36m            SSH Account            \E[0m" 
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" 
-echo -e "Username : $Login" 
-echo -e "Password : $Pass" 
-echo -e "Expired On : $exp" 
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" 
-echo -e "IP Address : $IP" 
-echo -e "Host : $domen" 
-echo -e "OpenSSH : $opensh" 
-echo -e "Dropbear : $db" 
-echo -e "SSH-WS : $portsshws" 
-echo -e "SSH-SSL-WS : $wsssl" 
-echo -e "SSL/TLS : $ssl" 
-echo -e "UDPGW : 7100-7300" 
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+        SSH Account       
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Username : $Login
+Password : $Pass
+Expired On : $exp
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+IP Address : $IP
+Host : $domen
+OpenSSH : $opensh
+Dropbear : $db
+SSH-WS : $portsshws
+SSH-SSL-WS : $wsssl
+SSL/TLS : $ssl
+UDPGW : 7100-7300
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Payload WSS: GET wss://BUG.COM/ HTTP/1.1[crlf]Host: $domain[crlf]Upgrade: websocket[crlf][crlf] 
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 END
 
