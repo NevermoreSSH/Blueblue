@@ -120,6 +120,7 @@ Link GO : trojan-go://${uuid}@${domain}:${tr}?path=%2Ftrojan-ws&security=tls&hos
 _______________________________________________________
 Link GRPC : trojan://${uuid}@${domain}:${tr}?mode=gun&security=tls&type=grpc&serviceName=trojan-grpc&sni=${domain}#TROJAN_GRPC_${user}
 _______________________________________________________
+Expired On : $exp
 
 END
 trojanlink1="trojan://${uuid}@${domain}:${tr}?path=%2Ftrojan-ws&security=tls&host=${domain}&type=ws&sni=${domain}#TROJAN_WS_${user}"
