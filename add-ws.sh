@@ -244,6 +244,7 @@ Link none TLS : vmess://$(echo $ask | base64 -w 0)
 _______________________________________________________
 Link GRPC : vmess://$(echo $grpc | base64 -w 0)
 _______________________________________________________
+Expired On : $exp
 
 END
 systemctl restart xray > /dev/null 2>&1
